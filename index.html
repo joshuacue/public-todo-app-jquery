@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://use.fontawesome.com/releases/v5.10.1/js/all.js" data-auto-replace-svg="nest"></script>
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="container jumbotron">
+      <div class="add row mb-12 text-center">
+        <div class="add mb-4 mt-4 col-12">
+          <hr />
+          <h1>Todo App</h1>
+          <hr />
+          <div class="input-group mb-4 mt-4">
+            <input type="text" class="form-control" placeholder="What do you want to do?" id="add-task-input" aria-label="text input for Todo" value=""
+              onkeyup="toSubmit(event)">
+            <div class="input-group-append">
+              <button class="add btn btn-outline-secondary" onclick="addtask()" type="button" id="addtodo">Add
+                Task</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="nav nav-tabs row mt-4">
+          <li class="nav-item">
+            <a class="nav-link" id="show-all" onclick="alltodos()" href=#>All</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="showComplete()" id="show-complete" href="#">Completed</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="showTodo()"  id="show-todo" href="#">Todo</a>
+          </li>
+        </ul>
+      <div class="container-wrap row mt-4 tex-center"></div>
+    </div>
+  
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

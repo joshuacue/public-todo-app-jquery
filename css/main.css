@@ -1,0 +1,28 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+input:focus,
+button:focus,
+button:active,
+button:hover,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    box-shadow: none !important;
+}
+span.icon { 
+  font-family: FontAwesome; 
+} 
+.add.row {
+  background-color: #e9ecef;
+  padding:0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  background-color: #fff !important;
+}
