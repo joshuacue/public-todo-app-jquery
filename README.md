@@ -5,13 +5,15 @@ See live demo @ https://codepen.io/joshuacue/project/full/Axggjr
 
 User CAN:
 -Add todo
--filter to all, completed and todo
--delete completed todo
+-filter to all, completed and todo task
+-delete completed task
+-Edit task
+-Press enter to add task
 
 User CAN'T:
--delete todo if not completed
--add empty todo
--add white space todo
+-delete task if not completed
+-add empty task
+-add white space task
 
 
 Created by:
